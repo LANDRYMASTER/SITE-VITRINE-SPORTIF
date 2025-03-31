@@ -1,0 +1,303 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(green, black);
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.brand {
+    display: flex;
+    color: white;
+    cursor: pointer;
+}
+
+.brand svg {
+    width: 24px;
+    aspect-ratio: 1;
+    fill: none;
+    stroke: currentColor;
+}
+
+.brand p {
+    font-size: 22px;
+    font-family: "Tektur";
+}
+
+.nav {
+    box-shadow: 0 0 10px #ffffff inset;
+    padding: 16px 21px;
+    border-radius: 10px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.extra-nav {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.select button {
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    outline: none;
+    background-color: transparent;
+    box-shadow: 0 0 5px white inset;
+    column-gap: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+.select img {
+    width: 24px;
+}
+
+#login {
+    background-color: transparent;
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+
+}
+
+#login a {
+    text-decoration: none;
+    color: green;
+    font-size: 18px;
+}
+
+#Trade {
+    background-color: green;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+#Trade a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#home {
+    border: 1px solid white;
+    background-color: transparent;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: none;
+}
+
+.main {
+    padding-top: 150px ;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+
+#comment {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+#action {
+    margin-top: 25px;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 15px 25px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#action a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.gauche {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.stat {
+    margin: 10px 30px;
+    box-shadow: 0 0 5px white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+h3 {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.stat p {
+    color: white;
+}
+
+.droite {
+    display: flex;
+    margin-right: 30px;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.droite p {
+    color: white;
+    font-size: 12px;
+}
+
+.droite button {
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0 0 8px white inset;
+    padding: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 950px) { 
+    .extra-nav {
+        display: none;
+    }
+
+    #home {
+        display: block;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+
+    .droite {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .main {
+        padding-top: 70px;
+    }
+
+    .stat {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 640px) { 
+
+    .header {
+        justify-content: space-around;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .main {
+        padding-top: 180px ;
+    }
+
+    .text {
+        font-size: 13px;
+    }
+
+    .main svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #action {
+        padding: 10px 15px;
+    }
+
+    #action a {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .stat {
+        padding: 10px;
+        box-shadow: none;
+        margin: 5px;
+        border-right: 1px solid white;
+    }
+
+    .stat h3 {
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    .stat p {
+        font-size: 12px;
+    }
+
+    #comment {
+        display: none;
+    }
+}
